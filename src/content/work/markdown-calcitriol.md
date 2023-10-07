@@ -1,7 +1,7 @@
 ---
 title: Calcitriol Poster
 publishDate: 2020-04-17 00:00:00
-img: /assets/calcitriol.jpg
+img: ../assets/calcitriol.jpg
 img_alt: frontend of our wixsite
 description: |
   We designed a poster to present the hormonal function of calcitriol
