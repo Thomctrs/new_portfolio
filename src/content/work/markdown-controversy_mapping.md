@@ -1,7 +1,7 @@
 ---
 title: Controversy Mapping
 publishDate: 2023-01-27 00:00:00
-img: /assets/contro.jpg
+img: ../assets/contro.jpg
 img_alt: frontend of our wixsite
 description: |
   We designed a site to present our survey about lithium exploitation and national sovereignty
