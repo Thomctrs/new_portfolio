@@ -1,7 +1,7 @@
 ---
 title: French Accident Simulation Project
 publishDate: 2023-07-02 00:00:00
-img: /assets/ia_bg.jpg
+img: ../assets/ia_bg.jpg
 img_alt: frontend of our wixsite
 description: |
   A 3 weeks project about accident data processing, IA prediction and a restition by Website developemnt
@@ -20,7 +20,7 @@ By group of 3 and for 3 weeks, we had to build a project that studies large data
 
 
 
-![mcd](/assets/mcd.jpg)
+![mcd](../assets/mcd.jpg)
 
 
 
@@ -35,8 +35,8 @@ Using these graphs, we could establish equations of lines see the relationships 
 At the end of the week we had to prepare a clean and functional excel file for the IA part.
 
 
-<iframe src="/assets/Big_Data_present.pdf" width="100%" height="500px">
-  This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/Big_Data_present.pdf">Download PDF</a>.
+<iframe src="../assets/Big_Data_present.pdf" width="100%" height="500px">
+  This browser does not support PDFs. Please download the PDF to view it: <a href="../assets/Big_Data_present.pdf">Download PDF</a>.
 </iframe>
 
 
@@ -46,8 +46,8 @@ The second step of this project was to use our AI knowledge to produce different
 
 The cleaned data by Big Data process are used in PCA reduction, in clustering from scratch with differents types of calculates disatnces (L1, L2, Haversine). Some KNN clasification were also used with and without Sklearn. "ROC" curves were realising to show accuracy of our simulation models.
   
-<iframe src="/assets/IA_present.pdf" width="100%" height="500px">
-  This browser does not support PDFs. Please download the PDF to view it: <a href="/assets/IA_present.pdf">Download PDF</a>.
+<iframe src="../assets/IA_present.pdf" width="100%" height="500px">
+  This browser does not support PDFs. Please download the PDF to view it: <a href="../assets/IA_present.pdf">Download PDF</a>.
 </iframe>
 
 
@@ -59,5 +59,5 @@ The end of this project was to show the work that was done in the previous 2 wee
 
 A data base was created on mySQL to enter new accidents to see them on cluster maps and the severity according to the parameters of the latter :
 
-![mcd](/assets/mcd.jpg)
+![mcd](../assets/mcd.jpg)
 
