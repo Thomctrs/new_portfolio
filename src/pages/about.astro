@@ -1,0 +1,160 @@
+---
+import BaseLayout from '../layouts/BaseLayout.astro';
+
+import ContactCTA from '../components/ContactCTA.astro';
+import Hero from '../components/Hero.astro';
+---
+
+<BaseLayout title="About | Thomas Catros" description="About Thomas catros">
+	<div class="stack gap-20">
+		<main class="wrapper about">
+			<Hero
+				title="About me"
+				tagline="Thanks for stopping by. Read below to learn more about myself and my background."
+			>
+				<img
+					width="1553"
+					height="873"
+					src="/assets/isen_gl.jpg"
+					alt="Thomas Catros at work with a colleague"
+				/>
+			</Hero>
+
+			<section> 
+				<h2 class="section-title">Background</h2>
+				<div class="content">
+					<p>
+						My name is Thomas Catros, I'm 22. I'm currently student in first year of master degree at the engineer school
+						ISEN Brest, France. Through my first year in health studies and my preparatory class in BIOST at ISEN I have developed
+						a strong interest in the human biologie sciences. I had opportunities to study subjects such as Cell Biology, Biochemistry, 
+						Human Physiology, Genetics, Pharmaco-Toxicology and Microbiology. 
+					</p>
+					<br>
+					<p>
+						However, during my studies at ISEN, computer sciences became a real passion. That's why i decided to opt for 
+						the professional field of software engineering. 
+						It seemed important to me to acquire as much technical knowledge as possible during my studies.
+					</p>
+					<br>
+					<p>Alongside my studies, I'm involved in the school's community life. I'm in charge of events for the student office
+						for the second time, and I try to liven up the students' daily lives with all sorts
+						of activities: integration, parties, games, weekends, conferences, etc.
+					</p>
+					<br>
+					<p>
+						Sport is a real obsession for me. I'm currently playing my 17th year of football at Plouhinec Football Club
+						in the Regional 2 division. This experience give me priceless qualities like teamwork, self discipline and strengh to constantly pushing
+						 my limits further. I am also a fast-learner with a strong ability to work both independently and with a team.
+
+
+
+					</p>
+				</div>
+			</section>
+			<br><br>
+			<section>
+				<h2 class="section-title">Education</h2>
+				<div class="content">
+					<h5>2016-2019 Scientific General Baccalaureat, Lycée Victor Hugo, Hennebont, France </h5><br>
+					<p>Specialising in Physical Sciences, with first class honours </p>
+					<br>
+					<br>
+					<br>
+					<h5>2019-2020 Common First Year of Health Studies (Medicine), Western Brittany University, Brest, France </h5><br>
+					<p>Training in biochemistry, biophysics, physiology, biostatistics, cell biology, anatomy, introduction to 
+						knowledge of medicine (ICDM), health society humanity (SSH), Medical specialty.  </p>
+					<br>
+					<br>
+					<br>
+					<h5>2020-2023 BIOST Preparatory Cycle at Higher institute of electronics and digital 
+						technology ISEN Yncrea Ouest (engineering school), Brest, France</h5><br>
+					<p>Training in Maths, Physics, Python, English, Cellular Biology, Biochemistry, Human Physiology, Genetics, Pharmaco-Toxicology, 
+						Microbiology, Social Human Education (FHS), 
+						Industrial Engineering Sciences (SII), Chinese, Analog  Electronics. </p>
+					<br>
+					<br>
+					<h5>2023-2025 First year of Master Degree at Higher institute of electronics and digital 
+						technology ISEN Yncrea Ouest (engineering school), Brest, France</h5><br>
+					<p>Training in Maths, Physics, Programming (Python, C, R, CSS, HTML, PHP, Javascript, Java, Mathlab), English, Social Human Education (FHS), 
+						Industrial Engineering Sciences (SII), Chinese, Economy, STM32, Real time systems, Analog and numeric Electronics. </p>
+					<br>
+					<br>
+					<br>
+				</div>
+			</section>
+			<section>
+				<h2 class="section-title">Skills ans Certifications</h2>
+				<div class="content">
+					<p>English: TOEIC 935 (Id : 3189609095)</p>
+					<p>French: Voltaire Certificate (Id : YVTWEN)</p>
+					<p>Spanish: High school level, B2 A1</p>
+					<p>Chinese: Notions, A1</p><br>
+					<p>Programming langages: C, R, Python, Javascript, Java, CSS, HTML, PHP, Mathlab</p>
+					<br>
+					<p>PSC1 first aid certification</p>
+					<p>Driving licence and vehicle</p>
+				</div>
+			</section>
+		</main>
+
+		<ContactCTA />
+	</div>
+</BaseLayout>
+
+<style>
+	.about {
+		display: flex;
+		flex-direction: column;
+		gap: 3.5rem;
+	}
+
+	img {
+		margin-top: 1.5rem;
+		border-radius: 1.5rem;
+		box-shadow: var(--shadow-md);
+	}
+
+	section {
+		display: flex;
+		flex-direction: column;
+		gap: 0.5rem;
+		color: var(--gray-200);
+	}
+
+	.section-title {
+		grid-column-start: 1;
+		font-size: var(--text-xl);
+		color: var(--gray-0);
+	}
+
+	.content {
+		grid-column: 2 / 4;
+	}
+
+	.content :global(a) {
+		text-decoration: 1px solid underline transparent;
+		text-underline-offset: 0.25em;
+		transition: text-decoration-color var(--theme-transition);
+	}
+
+	.content :global(a:hover),
+	.content :global(a:focus) {
+		text-decoration-color: currentColor;
+	}
+
+	@media (min-width: 50em) {
+		.about {
+			display: grid;
+			grid-template-columns: 1fr 60% 1fr;
+		}
+
+		.about > :global(:first-child) {
+			grid-column-start: 2;
+		}
+
+		section {
+			display: contents;
+			font-size: var(--text-lg);
+		}
+	}
+</style>
