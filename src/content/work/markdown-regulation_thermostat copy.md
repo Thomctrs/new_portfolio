@@ -1,7 +1,7 @@
 ---
 title: Thermostat Regulation
 publishDate: 2023-03-02 00:00:00
-img: /assets/ela_project.jpg
+img: ../assets/ela_project.jpg
 img_alt: frontend of our wixsite
 description: |
   A 3 weeks project about the simulation of a thermostat regulation with Analogic Electronic, STM32 & C regulation.
@@ -25,7 +25,7 @@ First of all, to simulate the real conditions of the walls of the habitat on a t
 
 These results have been converted to correspond to values of electronic components that can be welded to an electronic board (resistors, capacitors). A test phase was necessary to validate that each component of the board was functional.
 
-![image of ela](/assets/ela_soude.jpg)
+![image of ela](../assets/ela_soude.jpg)
 
 
 ### A C thermostat regulation 
@@ -34,14 +34,14 @@ The second step of this project was to set up a program that simulates a thermos
 
 The regulation was divided into many functions following the tree structure below
 
-![image of tree](/assets/c_program.jpg)
+![image of tree](../assets/c_program.jpg)
 
 To visualize the regulation a Python user interface was developped.
 
-![image python](/assets/ihm.jpg)
+![image python](../assets/ihm.jpg)
 
 ### And finally, a Numeric Electronic visualisation (STM32)
 
 The end of this project was to vizualize the regulation of thermostat by connecting the Electronic part and the C part on a STM32 board. The home vizualisation is set up on a TFT screen. Bouttons and potentiometers allow the opening and the firmness of an anise window that to push or not the heating of the house.
 
-![image stm32](/assets/stm32.jpg)
+![image stm32](../assets/stm32.jpg)
